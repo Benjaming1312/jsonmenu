@@ -2,9 +2,12 @@ jQuery.fn.jsonmenu = function (options) {
 
     // jQuery設定
     var settings = jQuery.extend({
-        autoclick: true
+        autoclick: true,
+        listjson: []
     }, options)
 
+
+    var listjson = settings.listjson
     var usetag = $(this)
     for (i = 0; i < listjson.length; i++) {
         if (listjson[i].iconImage == undefined) {
@@ -64,7 +67,6 @@ jQuery.fn.jsonmenu = function (options) {
 
     // 第三層
     var useClass = $(this).find('ul.dropdown-menu').children('li').children('a')
-    console.log(useClass)
     for (i = 0; i < listjson.length; i++) {
         // $('.dropdown > .dropdown-menu >li  >a').each(function () {
         $(this).find('ul.dropdown-menu').children('li').children('a').each(function () {

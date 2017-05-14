@@ -52,13 +52,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="listjson.js"></script>
-    <script src="listmenu.js"></script>
+    <script src="listjson2.js"></script>
+    <script src="jsonmenu.js"></script>
     <script>
         $('.navbar-right').jsonmenu({
-            autoclick: false
+            autoclick: false,
+            listjson: listjson
         })
         $('.left-menu').jsonmenu({
-            autoclick: true
+            autoclick: false,
+            listjson: listjson2
         })
     </script>
 </body>
