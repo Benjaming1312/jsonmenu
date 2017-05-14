@@ -19,18 +19,17 @@
 ```
 
 <br>
+
 引入套件
 ```
-//這是資料陣列
-<script src="listjson.js"></script>
-//這是資料陣列
-<script src="listjson2.js"></script>
-//這是套件
-<script src="jsonmenu.js"></script>
+<script src="listjson.js"></script> //這是陣列資料
+<script src="listjson2.js"></script> //這是陣列資料
+<script src="jsonmenu.js"></script> //這是套件
 ```
 <br>
 
 使用套件
+
 <br>
 ```
  $('.navbar-right').jsonmenu({
