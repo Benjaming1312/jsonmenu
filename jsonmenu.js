@@ -105,6 +105,11 @@ jQuery.fn.jsonmenu = function (options) {
         $(this).not('.dropdown').remove()
     })
 
+    $('a.dropdown-toggle').removeAttr('href')
+
+    // 避免第二層被點擊無法開啟
+    var clicktarget = $(this).children('.dropdown').children('.dropdown-menu').find('.dropdown').children('a.dropdown-toggle')
+
     if ($(window).width() > 768) {
         if (settings.autoclick == true) {
             // click無效
@@ -118,7 +123,7 @@ jQuery.fn.jsonmenu = function (options) {
             })
         } else {
             // 第二層click展開
-            $('.dropdown > .dropdown-menu > .dropdown > a.dropdown-toggle').click(function (e) {
+            clicktarget.click(function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 $(this).parent('li').toggleClass('open')
@@ -126,7 +131,7 @@ jQuery.fn.jsonmenu = function (options) {
         }
     } else {
         // 手機版本第二層click展開
-        $('.dropdown > .dropdown-menu > .dropdown > a.dropdown-toggle').click(function (e) {
+        clicktarget.click(function (e) {
             e.preventDefault();
             e.stopPropagation();
             $(this).parent('li').toggleClass('open')
