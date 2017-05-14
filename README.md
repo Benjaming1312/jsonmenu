@@ -3,6 +3,11 @@
 
 基於客戶經常修改html原始檔案造成架構跑掉，故製作了這個套件，使用陣列的方式讓網頁可以直接渲染出多層選單
 
+<h3>
+<a href="https://codepen.io/benjaming1312/pen/YVvyNK">範例</a>
+</h3>
+
+
 使用軟體
 <br>
 <ul>
