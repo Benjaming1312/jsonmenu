@@ -31,16 +31,18 @@
 使用套件
 
 <br>
+
 ```
  $('.navbar-right').jsonmenu({
       autoclick: false,
       listjson: listjson
   })
+  
   $('.left-menu').jsonmenu({
       autoclick: false,
       listjson: listjson2
   })
-  ```
+```
   
   <br>
   
